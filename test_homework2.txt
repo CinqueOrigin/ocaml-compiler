@@ -1,0 +1,10 @@
+62*70+5 mod 6;;
+let sum a b = a+b;;
+let biggerthan a b = if a>b then true else false;;
+let func a b = let max a b = if a>b then a else b in max a b;; 
+let ne a b = if a<>b then true else false;;
+let a = 50;;
+let func a b = if a then b*2+1;; 
+let getMod a b = if(a>b)then a mod b else b mod a;;
+let range a b = let rec aux acc high low = if high < low then aux (high+50) (low mod 20) low else acc in if a < b then aux high 1 2 else aux low 1 2;;
+let is_prime n = let n = abs n in let rec is_not_divisor d = d * d > n || (n mod d <> 0 && is_not_divisor (d + 1)) in n <> 1 && is_not_divisor 2;;;;
